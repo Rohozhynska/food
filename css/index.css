@@ -1,14 +1,12 @@
 .flex-container {
    display: flex;
    margin: 0; 
-  padding-left: 0; 
+  
   justify-content: space-around;
 }
 ul {
   
   list-style: none; 
-  margin: 0; 
-  padding-left: 0; 
   display: flex;
   justify-content: space-around;
 }
