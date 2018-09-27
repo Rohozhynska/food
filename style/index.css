@@ -1,0 +1,79 @@
+:root {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+
+    margin: auto;
+}
+header {
+    display: grid;
+     grid-template-columns: 16.8% 60% 7.4% 15.8%;
+    align-items: center;
+    height: 100px;
+    background-color: #2f3032;
+    margin: 0;
+    padding: 0;
+
+}
+.header-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header p {
+    display: flex;
+    justify-content: flex-end;
+    margin:0;
+    }
+
+.header-nav a {
+    color: #efefef;
+    display: flex;
+    justify-content:center;
+    text-decoration: none;
+    padding: 0 1%;
+    font-size: 13px;
+}
+.language a {
+     color: #efefef;
+     text-decoration: none;
+}
+.language span{
+    color: #616162;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+    color: #c7b084;
+    
+}
+.find_us {
+    display: flex;
+   justify-content: space-around;
+  
+    
+}
+
+#first_level {
+    display: flex;
+     justify-content: space-around;
+
+}
+.wrapper{
+  text-align:center;
+  margin:50px auto;
+}
+
+.tabs{
+  margin-top:50px;
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#fff;
+  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+}
+
