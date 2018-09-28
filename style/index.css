@@ -25,7 +25,7 @@ header p {
     display: flex;
     justify-content: flex-end;
     margin:0;
-    }
+}
 
 .header-nav a {
     color: #efefef;
@@ -39,6 +39,7 @@ header p {
      color: #efefef;
      text-decoration: none;
 }
+
 .language span{
     color: #616162;
 }
@@ -46,20 +47,18 @@ header p {
 .header-nav a:hover {
     text-decoration: underline;
     color: #c7b084;
-    
 }
+
 .find_us {
     display: flex;
    justify-content: space-around;
-  
-    
 }
 
-#first_level {
-    display: flex;
-     justify-content: space-around;
-
+.first_level {
+    display: grid;
+     grid-columns: 1fr 1fr;
 }
+
 .wrapper{
   text-align:center;
   margin:50px auto;
