@@ -1,0 +1,104 @@
+:root {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 16.8% 67.4% 15.8%;
+    grid-column-start: 2;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 16.8% 60% 7.4% 15.8%;
+    align-items: center;
+    height: 100px;
+    background-color: #2f3032;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header p {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.header-nav a {
+    color: #efefef;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1%;
+    font-size: 13px;
+}
+
+.language a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.language span {
+    color: #616162;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+    color: #c7b084;
+}
+
+.find_us {
+    display: flex;
+    justify-content: space-around;
+}
+
+.first_level {
+    display: grid;
+    grid-template-columns: 16.8% 33.2% 34.2% 15.8%;
+    height: 66px;
+
+}
+
+#search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 28px;
+}
+
+#cabinet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #5b5b5b;
+    grid-column-start: 2;
+}
