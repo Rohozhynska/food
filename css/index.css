@@ -7,21 +7,15 @@ body {
     margin: auto;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 16.8% 67.4% 15.8%;
-    grid-column-start: 2;
-}
-
 header {
     display: grid;
     grid-template-columns: 16.8% 60% 7.4% 15.8%;
+    grid-column-gap: 6px;
     align-items: center;
     height: 100px;
     background-color: #2f3032;
     margin: 0;
     padding: 0;
-
 }
 
 .header-nav {
@@ -66,12 +60,13 @@ header p {
 
 .first_level {
     display: grid;
-    grid-template-columns: 16.8% 33.2% 34.2% 15.8%;
+    grid-template-columns: 16.8% 60% 7.4% 15.8%;
+    grid-column-gap: 6px;
     height: 66px;
-
 }
 
 #search {
+    grid-column-start: 2;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -102,3 +97,92 @@ h1 {
     color: #5b5b5b;
     grid-column-start: 2;
 }
+
+.select {
+    display: grid;
+    grid-template-columns: 16.8% 40% 27.4% 15.8%;
+    grid-column-gap: 6px;
+}
+
+nav {
+    display: flex;
+    grid-column-start: 2;
+}
+
+select {
+    width: 150px;
+    grid-column-start: 2;
+    display: flex;
+    height: 42px;
+    font-size: 12px;
+    color: #5b5b5b;
+    text-align: center;
+}
+
+.news {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 16.8% 1fr 1fr 1fr 1fr 15.8%;
+    grid-template-rows: 409px 270px 270px;
+}
+
+.news figure {
+    grid-column-start: 2;
+    margin: 0;
+    padding: 0;
+    width: 545px;
+    grid-column: col / span 2;
+
+}
+
+#first_news {
+    grid-column: 2 / 4;
+    background-image: url('../img/selection/cutlet.png');
+    margin: 6px 0 0 0;
+    text-align: center;
+    font-size:33px;
+    
+}
+
+#second_news {
+    grid-column: 4 / 6;
+    background-image: url('../img/selection/pear.png');
+    margin: 6px 0 0 0;
+}
+
+.five_recepts {
+    grid-column: 2 / 4;
+    grid-row-start: 2;
+    background-image: url('../img/selection/flour.png');
+
+}
+
+.little_one {
+    background-image: url('../img/selection/sandwich.png');
+    grid-row: 2;
+    grid-column: 4;
+    grid-row-start: 2;
+}
+
+.little_second {
+    background-image: url('../img/selection/latte.png');
+    grid-row: 2;
+    grid-column: 5;
+    grid-row-start: 2;
+}
+.little_two_one {
+    background-image: url('../img/selection/honey.png');
+    grid-row: 3;
+    grid-column: 2;
+}
+.little_one_second {
+    background-image: url('../img/selection/woman.png');
+    grid-row: 3;
+    grid-column: 3;
+}
+.last_one {
+    grid-column: 4 / 6;
+    grid-row: 3;
+    background-image: url('../img/selection/chef.png');
+}
+
