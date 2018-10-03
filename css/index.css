@@ -121,68 +121,60 @@ select {
 
 .news {
     display: grid;
+    grid-column-start: 2;
     grid-gap: 6px;
     grid-template-columns: 16.8% 1fr 1fr 1fr 1fr 15.8%;
     grid-template-rows: 409px 270px 270px;
+    grid-template-areas: ". first_news first_news second_news second_news ."
+    ". five_recepts five_recepts little_one little_second ."
+    ". little_two_one  little_one_second last_one last_one ."
 }
 
 .news figure {
-    grid-column-start: 2;
     margin: 0;
     padding: 0;
     width: 545px;
-    grid-column: col / span 2;
-
 }
 
-#first_news {
-    grid-column: 2 / 4;
+.first_news {
     background-image: url('../img/selection/cutlet.png');
     margin: 6px 0 0 0;
     text-align: center;
     font-size:33px;
+    grid-area: first_news;
     
 }
-
-#second_news {
-    grid-column: 4 / 6;
+.second_news {
     background-image: url('../img/selection/pear.png');
     margin: 6px 0 0 0;
+    grid-area: second_news;
 }
 
 .five_recepts {
-    grid-column: 2 / 4;
-    grid-row-start: 2;
     background-image: url('../img/selection/flour.png');
+    grid-area:five_recepts;
 
 }
 
 .little_one {
     background-image: url('../img/selection/sandwich.png');
-    grid-row: 2;
-    grid-column: 4;
-    grid-row-start: 2;
+grid-area: little_one;
 }
 
 .little_second {
     background-image: url('../img/selection/latte.png');
-    grid-row: 2;
-    grid-column: 5;
-    grid-row-start: 2;
+grid-area: little_second;
 }
 .little_two_one {
     background-image: url('../img/selection/honey.png');
-    grid-row: 3;
-    grid-column: 2;
+    grid-area: little_two_one;
 }
 .little_one_second {
     background-image: url('../img/selection/woman.png');
-    grid-row: 3;
-    grid-column: 3;
+     grid-area: little_one_second;
 }
 .last_one {
-    grid-column: 4 / 6;
-    grid-row: 3;
+    grid-area: last_one;
     background-image: url('../img/selection/chef.png');
 }
 
