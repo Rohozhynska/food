@@ -295,5 +295,7 @@ select {
     }
     .recepts_img img {
         height: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
