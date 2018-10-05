@@ -251,6 +251,15 @@ select {
     width: 400px;
 }
 
+.top_autors {
+    display: grid;
+     grid-template-columns: 1fr;
+    height: 100%;
+}
+.top_autors img {
+   width: 100%; 
+}
+
 @media (max-width: 970px) {
     .recepts_area {
         grid-template-columns: repeat(2, 1fr);
