@@ -253,14 +253,22 @@ select {
 
 .top_autors {
     display: grid;
-     grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     height: 100%;
 }
+
 .top_autors img {
-   width: 100%; 
+    width: 100%;
 }
 
 @media (max-width: 970px) {
+    .news {
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 450px) repeat(4, 270px);
+        grid-template-areas: " first_news first_news" "second_news second_news " " five_recepts five_recepts" "little_one little_second " " little_two_one  little_one_second" "last_one last_one ";
+    }
     .recepts_area {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
