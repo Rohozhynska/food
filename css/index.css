@@ -138,6 +138,7 @@ select {
 
 .first_news {
     background-image: url('../img/selection/cutlet.png');
+    background-size: cover;
     margin: 6px 0 0 0;
     text-align: center;
     font-size:33px;
@@ -146,35 +147,184 @@ select {
 }
 .second_news {
     background-image: url('../img/selection/pear.png');
+    background-size: cover;
     margin: 6px 0 0 0;
     grid-area: second_news;
 }
 
 .five_recepts {
     background-image: url('../img/selection/flour.png');
+    background-size: cover;
     grid-area:five_recepts;
-
 }
 
 .little_one {
     background-image: url('../img/selection/sandwich.png');
+    background-size: cover;
 grid-area: little_one;
 }
 
 .little_second {
     background-image: url('../img/selection/latte.png');
+    background-size: cover;
 grid-area: little_second;
 }
 .little_two_one {
     background-image: url('../img/selection/honey.png');
+    background-size: cover;
     grid-area: little_two_one;
 }
 .little_one_second {
     background-image: url('../img/selection/woman.png');
+    background-size: cover;
      grid-area: little_one_second;
 }
 .last_one {
     grid-area: last_one;
     background-image: url('../img/selection/chef.png');
+    background-size: cover;
 }
+.recepts_area {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 16.8% 1fr 1fr 15.8%;
+    grid-template-rows: 265px 265px 265px 265px 265px;
+    grid-template-areas: " . 1_1 1_2 . "
+    " . 2_1 2_2 . "
+    " . 3_1 3_2 . "
+    " . 4_1 4_2 . "
+    ". 5_1 5_2 .";
+    
+}
+.recepts#1{
+    grid-area: 1_1;
+    grid-column-start: 2;
+}
+.recepts#2{
+    grid-area: 1_2;
+}
+.recepts#3{
+    grid-area: 2_1;
+    grid-column-start: 2;
+}
+.recepts#4{
+    grid-area: 2_2;
+}
+.recepts#5{
+    grid-area: 3_1;
+    grid-column-start: 2;
+}
+.recepts#6{
+    grid-area: 3_2;
+}
+.recepts#7{
+    grid-area: 4_1;
+    grid-column-start: 2;
+}
+.recepts#8{
+    grid-area: 4_2;
+}
+.recepts#9{
+    grid-area: 5_1;
+    grid-column-start: 2;
+}
+.recepts#10{
+    grid-area: 5_2;
+}
+.recepts {
+    display: flex;
+    border-color: red;
+    border-width: 1px;
+    border-color: red;
+    
+}
+
+.recepts_descr {
+    grid-column-start: 2;
+    display: flex;
+    background-image: url('../img/selection/chef.png');
+    height: 265px;
+    
+}
+.recepts_img{
+    display: flex;
+    width: 268px;
+    margin: 0;
+}
+.recepts_1 {
+    height: 265px;
+    width: 268px;
+    display: flex;
+    background-image: url('../img/selection/chef.png');
+    background-size: cover;
+    
+}
+.recepts_2 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/pasta.png');
+    background-size: cover;
+}
+.recepts_3 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/avocado.png');
+    background-size: cover;
+    
+}
+.recepts_4 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/meat.png');
+    background-size: cover;
+}
+.recepts_5 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/sweet_bread.png');
+    background-size: cover;
+   
+}
+.recepts_6 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/bruschette.png');
+    
+}
+.recepts_7 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/bread_berry.png');
+    background-size: cover;
+    
+}
+.recepts_8 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/pie.png');
+    background-size: cover;
+}
+.recepts_9 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/avocado.png');
+    background-size: cover;
+    
+}
+.recepts_10 {
+    height: 265px;
+    width: 268px;
+    background-image: url('../img/recepts/rise.png');
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
 
