@@ -134,6 +134,13 @@ select {
     grid-template-areas: " first_news first_news second_news second_news " " five_recepts five_recepts little_one little_second " " little_two_one  little_one_second last_one last_one "
 }
 
+
+.first_news:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 .first_news {
     background-image: url('../img/selection/cutlet.png');
     background-size: cover;
@@ -142,7 +149,16 @@ select {
     font-size: 33px;
     grid-area: first_news;
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.second_news:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .second_news {
@@ -150,42 +166,99 @@ select {
     background-size: cover;
     margin: 6px 0 0 0;
     grid-area: second_news;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.five_recepts:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .five_recepts {
     background-image: url('../img/selection/flour.png');
     background-size: cover;
     grid-area: five_recepts;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.little_one:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .little_one {
     background-image: url('../img/selection/sandwich.png');
     background-size: cover;
     grid-area: little_one;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.little_second:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .little_second {
     background-image: url('../img/selection/latte.png');
     background-size: cover;
     grid-area: little_second;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.little__two_one:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .little_two_one {
     background-image: url('../img/selection/honey.png');
     background-size: cover;
     grid-area: little_two_one;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.little_one_second:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .little_one_second {
     background-image: url('../img/selection/woman.png');
     background-size: cover;
     grid-area: little_one_second;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.last_one:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .last_one {
     grid-area: last_one;
     background-image: url('../img/selection/chef.png');
     background-size: cover;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
 }
 
 .recepts_area {
@@ -291,7 +364,7 @@ select {
     padding: 0px;
     list-style: none;
     background: #f1f1f1;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     display: inline-block;
     border-radius: 50px;
     position: relative;
