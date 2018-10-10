@@ -190,7 +190,6 @@ select {
     display: grid;
     grid-gap: 6px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
 }
 
 .recepts_img {
@@ -207,6 +206,7 @@ select {
     margin: 1px;
     display: flex;
     border: 1px #2f3032 solid;
+    width: 100%;
 }
 
 .recepts_popular {
@@ -214,6 +214,7 @@ select {
     margin: 1px;
     display: flex;
     border: 1px #2f3032 solid;
+    width: 100%;
 }
 
 .recepts_recomended {
@@ -221,6 +222,7 @@ select {
     margin: 1px;
     display: flex;
     border: 1px #2f3032 solid;
+    width: 100%;
 }
 
 .recepts_descr {
