@@ -14,7 +14,6 @@ main {
 header {
     display: grid;
     grid-template-columns: 16.8% 60% 7.4% 15.8%;
-    grid-column-gap: 6px;
     align-items: center;
     height: 100px;
     background-color: #2f3032;
@@ -106,16 +105,16 @@ h1 {
 
 .select {
     display: grid;
-    grid-template-columns: 60% 40%;
+    /*grid-template-columns: 60% 40%;*/
     grid-column-gap: 6px;
 }
 
 select {
-    width: 150px;
+    width: 20%;
     grid-column-start: 2;
     display: flex;
     height: 42px;
-    font-size: 12px;
+    font-size: 10px;
     color: #5b5b5b;
     text-align: center;
 }
@@ -203,6 +202,7 @@ select {
     outline: 1px #2f3032;
     margin: 1px;
     display: flex;
+    border: 1px #2f3032 solid;
 }
 
 .recepts_descr {
@@ -214,8 +214,6 @@ select {
     grid-template-columns: repeat(4, 1fr);
     height: 500px;
     grid-gap: 6px;
-
-
 }
 
 .hot_r1 {
@@ -261,6 +259,64 @@ select {
     width: 100%;
 }
 
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.selector {
+    grid-column-start: 2;
+   display: flex;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 42px;
+    margin-bottom: 10px;
+    border-radius: 19px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.42857143;
+    height: 50px;
+    background-color: #e4e4e4;
+    line-height: 1.42857143;
+    width: 100%;
+    border-image-repeat:stretch;
+
+.tabs {
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+button{
+    border: none;
+    outline: none;
+}
+.tabs button {
+    
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-size: 10px;
+    color: #5b5b5b;
+    height: 50px;
+    padding: 14px 16px;
+    width: 170px;
+    border-radius: 30px;
+    background-color: #e4e4e4;
+    -webkit-appearance: button;
+    cursor: pointer;
+    }
+
+#active {
+    color: #5b5b5b;
+    height: 50px;
+    padding: 14px 16px;
+    width: 100%;
+    border-radius: 19px;
+    background-color: #2f3032;
+}
+
 @media (max-width: 970px) {
     .news {
         display: grid;
@@ -283,6 +339,7 @@ select {
     .recepts_descr {
         width: 100%;
     }
+
 }
 
 .submit {
@@ -305,5 +362,14 @@ select {
         height: 100%;
         display: flex;
         justify-content: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    select {
+        width: 100%;
     }
 }
