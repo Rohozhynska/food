@@ -216,8 +216,8 @@ select {
     -webkit-transition: all 1s ease-out;
 }
 
-.little__two_one:hover {
-    -webkit-transform: scale(1.1);
+.little_two_one:hover {
+     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
@@ -303,34 +303,45 @@ select {
 .recepts_descr {
     width: 50%;
 }
-
-.hot_recepts {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 500px;
-    grid-gap: 6px;
+.carusel-slide {
+    display: flex;
+    height: 100%;
+    justify-content:space-between;
+    height: 450px;
+    
 }
 
+.carusel-slide img {
+    width:95%;
+    min-height:100%;
+}
 .hot_r1 {
     background-image: url('../img/hot_recepts/becon.png');
     height: 100%;
     display: flex;
     background-size: cover;
+    width: 25%;
 }
 
 .hot_r2 {
     background-image: url('../img/hot_recepts/blue.png');
     background-size: cover;
+    width: 25%;
+    height: 100%;
 }
 
 .hot_r3 {
     background-image: url('../img/hot_recepts/corn.png');
     background-size: cover;
+    width: 25%;
+    height: 100%;
 }
 
 .hot_r4 {
     background-image: url('../img/hot_recepts/meat_beer.png');
     background-size: cover;
+    width: 25%;
+    height: 100%;
 }
 
 .subscribe {
@@ -398,6 +409,9 @@ select {
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background-color: #5b5b5b;
 }
+
+
+
 
 @media (max-width: 970px) {
     .news {

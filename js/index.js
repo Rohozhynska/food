@@ -1,3 +1,5 @@
+
+
 let tabs = $('.tabs');
 let items = $('.tabs').find('a').length;
 let selector = $(".tabs").find(".selector");
@@ -16,8 +18,7 @@ $(".tabs").on("click","a",function(){
   $(".selector").css({
     "left":itemPos.left + "px", 
     "width": activeWidth + "px"
-     
-  });
+     });
  
 });
 $("#all").click(function(){
@@ -42,3 +43,16 @@ $("#recomended").click(function(){
         $(".recepts_recomended").show();
         $(".recepts_new").hide();
     });
+
+$(document).ready(function(){
+$('.carusel-slide').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  speed: 1000,
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 2500,
+});
+});
+ 
