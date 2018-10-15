@@ -79,9 +79,9 @@ header .navbar {
         margin: 0;
         padding: 0;
     }
-header .navbar {
-    grid-column-start: 1;
-}
+    header .navbar {
+        grid-column-start: 1;
+    }
     .navbar-nav {
         justify-content: space-between;
         width: 100%;
@@ -101,6 +101,7 @@ header .navbar {
         float: right;
         display: block;
     }
+
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -496,6 +497,11 @@ select {
     select {
         width: 100%;
     }
+    .tabs a {
+        font-size: 10px;
+    }
+
+
 }
 
 .card {
@@ -528,7 +534,8 @@ div.card-description {
 .recept h4 {
     font-size: 0.9rem;
 }
-.carusel-slide{
+
+.carusel-slide {
     margin-bottom: 10px;
 }
 
@@ -550,9 +557,27 @@ div.card-description {
         display: none;
     }
 }
-.card-title, .card-text {
+
+@media(max-width: 600px) {
+
+    .first_news {
+        height: 204px;
+    }
+    .five_recepts {
+        height: 135px;
+    }
+    .little_second {
+        height: 135px;
+    }
+    .last_one {
+        height: 135px;
+    }
+}
+.card-title,
+.card-text {
     text-align: center;
 }
+
 .btn {
     cursor: pointer;
 }
