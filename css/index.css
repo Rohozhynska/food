@@ -79,7 +79,9 @@ header .navbar {
         margin: 0;
         padding: 0;
     }
-
+header .navbar {
+    grid-column-start: 1;
+}
     .navbar-nav {
         justify-content: space-between;
         width: 100%;
