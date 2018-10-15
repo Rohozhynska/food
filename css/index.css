@@ -13,12 +13,112 @@ main {
 
 header {
     display: grid;
-    grid-template-columns: 16.8% 60% 7.4% 15.8%;
+    grid-template-columns: 6% 60% 7.4% 15.8%;
     align-items: center;
     height: 100px;
     background-color: #2f3032;
     margin: 0;
     padding: 0;
+}
+
+header .navbar {
+    grid-column-start: 2;
+}
+
+.header .icon {
+    display: none;
+}
+
+.bg-light {
+    background-color: #2f3032;
+    /*color: #efefef;*/
+    width: 100%;
+    display: flex;
+}
+
+.collapse,
+.navbar-collapse {
+    background-color: #2f3032;
+}
+
+.bg-light {
+    background-color: #2f3032!important;
+}
+
+.nav-link {
+    color: #efefef!important;
+    font-size: 13px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #c7b084!important;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+    width: 50%;
+}
+
+.navbar-expand-lg {
+    padding: 0 16%;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        float: right;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        background-color: #2f3032;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-nav {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+#navbarColor02 {
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .header a:not(:first-child) {
+        display: none;
+    }
+
+    .header a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+@media screen and (max-width: 600px) {
+    .header.responsive {
+        position: relative;
+    }
+
+    .header.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .header.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 .header-nav {
@@ -53,11 +153,6 @@ nav {
 
 .language span {
     color: #616162;
-}
-
-.header-nav a:hover {
-    text-decoration: underline;
-    color: #c7b084;
 }
 
 .find_us {
@@ -130,10 +225,9 @@ select {
     display: grid;
     grid-gap: 6px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 409px 270px 270px;
+    /*grid-template-rows: 409px 270px 270px;*/
     grid-template-areas: " first_news first_news second_news second_news " " five_recepts five_recepts little_one little_second " " little_two_one  little_one_second last_one last_one "
 }
-
 
 .first_news:hover {
     -webkit-transform: scale(1.1);
@@ -142,6 +236,7 @@ select {
 }
 
 .first_news {
+    display: flex;
     background-image: url('../img/selection/cutlet.png');
     background-size: cover;
     margin: 6px 0 0 0;
@@ -153,6 +248,7 @@ select {
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    min-height: 409px;
 }
 
 .second_news:hover {
@@ -184,6 +280,7 @@ select {
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    min-height: 270px;
 }
 
 .little_one:hover {
@@ -214,10 +311,11 @@ select {
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    min-height: 270px;
 }
 
 .little_two_one:hover {
-     -webkit-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
@@ -259,89 +357,18 @@ select {
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    min-height: 270px;
 }
 
-.recepts_area {
-    display: grid;
-    grid-gap: 6px;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.recepts_img {
-    display: flex;
-    width: 50%;
-}
-
-.recepts_img img {
-    width: 100%;
-}
-
-.recepts_new {
-    outline: 1px #2f3032;
-    margin: 1px;
-    display: flex;
-    border: 1px #2f3032 solid;
-    width: 100%;
-}
-
-.recepts_popular {
-    outline: 1px #2f3032;
-    margin: 1px;
-    display: flex;
-    border: 1px #2f3032 solid;
-    width: 100%;
-}
-
-.recepts_recomended {
-    outline: 1px #2f3032;
-    margin: 1px;
-    display: flex;
-    border: 1px #2f3032 solid;
-    width: 100%;
-}
-
-.recepts_descr {
-    width: 50%;
-}
 .carusel-slide {
     display: flex;
     height: 100%;
-    justify-content:space-between;
-    height: 450px;
-    
+    justify-content: space-between;
 }
 
 .carusel-slide img {
-    width:95%;
-    min-height:100%;
-}
-.hot_r1 {
-    background-image: url('../img/hot_recepts/becon.png');
-    height: 100%;
-    display: flex;
-    background-size: cover;
-    width: 25%;
-}
-
-.hot_r2 {
-    background-image: url('../img/hot_recepts/blue.png');
-    background-size: cover;
-    width: 25%;
-    height: 100%;
-}
-
-.hot_r3 {
-    background-image: url('../img/hot_recepts/corn.png');
-    background-size: cover;
-    width: 25%;
-    height: 100%;
-}
-
-.hot_r4 {
-    background-image: url('../img/hot_recepts/meat_beer.png');
-    background-size: cover;
-    width: 25%;
-    height: 100%;
+    width: 95%;
+    min-height: 100%;
 }
 
 .subscribe {
@@ -410,9 +437,6 @@ select {
     background-color: #5b5b5b;
 }
 
-
-
-
 @media (max-width: 970px) {
     .news {
         display: grid;
@@ -470,4 +494,60 @@ select {
     select {
         width: 100%;
     }
+}
+
+.card {
+    height: 100%;
+}
+
+.btn {
+    padding: 0 0.25rem;
+    background-color: #5b5b5b;
+    border-color: #5b5b5b;
+}
+
+.recept {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+div.card-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.centered {
+    position: inherit;
+    top: 50%;
+    left: 50%;
+}
+
+.recept h4 {
+    font-size: 0.9rem;
+}
+.carusel-slide{
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: bold;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(max-width: 990px) {
+    .find_us,
+    .language {
+        display: none;
+    }
+}
+.card-title, .card-text {
+    text-align: center;
 }

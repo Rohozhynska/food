@@ -44,6 +44,7 @@ $("#recomended").click(function(){
         $(".recepts_new").hide();
     });
 
+
 $(document).ready(function(){
 $('.carusel-slide').slick({
   infinite: true,
@@ -55,4 +56,21 @@ $('.carusel-slide').slick({
   autoplaySpeed: 2500,
 });
 });
- 
+
+
+const receptList = new ReceptList('recepts.json', $('.recepts-container'));
+$(function() {
+    $('.smooth').on('click', function(event) {
+        const target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+});
+
+
+
+
