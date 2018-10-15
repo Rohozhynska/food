@@ -551,3 +551,6 @@ div.card-description {
 .card-title, .card-text {
     text-align: center;
 }
+.btn {
+    cursor: pointer;
+}
